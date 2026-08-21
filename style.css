@@ -1,0 +1,52 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: aqua;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+        
+        .autor {
+            font-style: italic;
+            color: #666;
+        }
+        
+        /* Ajusta o tamanho das imagens para não estourarem a tela */
+        article img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 10px 0;
+        }
+        
+        /* Estilo visual quando o botão estiver ativo */
+        button.ativo {
+            background-color: #ddd;
+            border-color: #999;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            margin-right: 5px;
+        }

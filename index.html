@@ -5,60 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Tech</title>
     
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        
-        header {
-            background-color: aqua;
-            text-align: center;
-            padding: 20px;
-        }
-        
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-        }
-        
-        h1, h2 {
-            color: #333;
-        }
-        
-        .autor {
-            font-style: italic;
-            color: #666;
-        }
-        
-        /* Ajusta o tamanho das imagens para não estourarem a tela */
-        article img {
-            max-width: 200px;
-            height: auto;
-            border-radius: 8px;
-            display: block;
-            margin: 10px 0;
-        }
-        
-        /* Estilo visual quando o botão estiver ativo */
-        button.ativo {
-            background-color: #ddd;
-            border-color: #999;
-        }
-
-        button {
-            cursor: pointer;
-            padding: 8px 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #fff;
-            margin-right: 5px;
-        }
-    </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -96,31 +43,7 @@
         </article>
     </main>
 
-    <script>
-        const botoes = document.querySelectorAll("button");
-        
-        botoes.forEach(botao => {
-            botao.addEventListener("click", function () {
-                const span = botao.querySelector("span");
-                let valor = Number(span.textContent);
-                
-                // Verifica se o botão já foi clicado antes usando dataset
-                const jaClicou = botao.dataset.clicado === "true";
-
-                if (!jaClicou) {
-                    // Se NÃO clicou ainda: soma 1 e marca como clicado
-                    span.textContent = valor + 1;
-                    botao.dataset.clicado = "true";
-                    botao.classList.add("ativo");
-                } else {
-                    // Se JÁ clicou antes: subtrai 1 e desmarca
-                    span.textContent = valor - 1;
-                    botao.dataset.clicado = "false";
-                    botao.classList.remove("ativo");
-                }
-            });
-        });
-    </script>
+   <script src="script.js"></script>
 
 </body>
 </html>
