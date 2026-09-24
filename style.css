@@ -18,14 +18,25 @@ main {
     padding: 16px;
 
     display: flex;
+    flex-wrap: wrap;
 }
 
-article img {
-    height: auto;
-    border-radius: 8px;
+article {
     display: flex;
-    margin: 10px 0;
-        }
+
+    border: 1px solid aqua;
+
+    margin: 16px;
+    gap: 16px;
+    padding: 16px;
+
+    flex: 1 1 25%;
+}
+
+img { 
+    width: 80px;
+    height: 80px;
+}
         
         /* Estilo visual quando o botão estiver ativo */
         button.ativo {
